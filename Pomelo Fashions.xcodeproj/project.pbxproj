@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD3EE34127B6471C00CD136C /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34027B6471C00CD136C /* TestUtils.swift */; };
+		BD3EE34727B6479400CD136C /* PMResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34627B6479400CD136C /* PMResultTest.swift */; };
+		BD3EE34927B647C700CD136C /* PMTestRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34827B647C700CD136C /* PMTestRepositoryTest.swift */; };
+		BD3EE34E27B6486500CD136C /* ApiNetworkConfigTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34D27B6486500CD136C /* ApiNetworkConfigTest.swift */; };
+		BD3EE35027B6488100CD136C /* ApiEndPointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34F27B6488100CD136C /* ApiEndPointProvider.swift */; };
+		BD3EE35227B6489E00CD136C /* DefaultNetworkServicetest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE35127B6489E00CD136C /* DefaultNetworkServicetest.swift */; };
+		BD3EE35627B648D300CD136C /* NewListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE35527B648D300CD136C /* NewListModelTest.swift */; };
+		BD3EE35827B648EB00CD136C /* NewsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE35727B648EB00CD136C /* NewsListViewModelTest.swift */; };
+		BD3EE35C27B64A3000CD136C /* MockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE34227B6473300CD136C /* MockTest.swift */; };
+		BD3EE35D27B64A3D00CD136C /* BundleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EE33E27B6470200CD136C /* BundleHandler.swift */; };
+		BD3EE35F27B682B100CD136C /* Mock_News.json in Resources */ = {isa = PBXBuildFile; fileRef = BD3EE35E27B682B100CD136C /* Mock_News.json */; };
+		BD3EE36027B685D600CD136C /* Mock_News.json in Resources */ = {isa = PBXBuildFile; fileRef = BD3EE35E27B682B100CD136C /* Mock_News.json */; };
+		BDB2639C27B52B8000BAE9A5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB2639B27B52B8000BAE9A5 /* Storyboard.storyboard */; };
+		BDD0159727B50E2A0002B315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0159627B50E2A0002B315 /* AppDelegate.swift */; };
+		BDD015A027B50E2B0002B315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD0159F27B50E2B0002B315 /* Assets.xcassets */; };
+		BDD015A327B50E2B0002B315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD015A127B50E2B0002B315 /* LaunchScreen.storyboard */; };
+		BDD015AE27B50E2B0002B315 /* Pomelo_FashionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015AD27B50E2B0002B315 /* Pomelo_FashionsTests.swift */; };
+		BDD015B827B50E2B0002B315 /* Pomelo_FashionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015B727B50E2B0002B315 /* Pomelo_FashionsUITests.swift */; };
+		BDD015BA27B50E2B0002B315 /* Pomelo_FashionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015B927B50E2B0002B315 /* Pomelo_FashionsUITestsLaunchTests.swift */; };
+		BDD015C827B517360002B315 /* APIConstantsWithKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015C727B517360002B315 /* APIConstantsWithKeys.swift */; };
+		BDD015CA27B517530002B315 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015C927B517530002B315 /* Configure.swift */; };
+		BDD015CF27B517C10002B315 /* NewYorkTimesArticlesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015CE27B517C10002B315 /* NewYorkTimesArticlesRepo.swift */; };
+		BDD015D127B517E50002B315 /* NewYorkTimesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015D027B517E50002B315 /* NewYorkTimesResult.swift */; };
+		BDD015D327B5180C0002B315 /* NewYorkTimesResultsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015D227B5180C0002B315 /* NewYorkTimesResultsMap.swift */; };
+		BDD015D527B5183B0002B315 /* SearchArticlesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015D427B5183B0002B315 /* SearchArticlesRepo.swift */; };
+		BDD015D727B5185A0002B315 /* PhotoRepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015D627B5185A0002B315 /* PhotoRepoService.swift */; };
+		BDD015D927B518770002B315 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015D827B518770002B315 /* Cancellable.swift */; };
+		BDD015DB27B518930002B315 /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015DA27B518930002B315 /* NetworkServiceProvider.swift */; };
+		BDD015DE27B518C70002B315 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015DD27B518C70002B315 /* NetworkError.swift */; };
+		BDD015E027B518E00002B315 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015DF27B518E00002B315 /* NetworkConfig.swift */; };
+		BDD015E227B518F80002B315 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015E127B518F80002B315 /* APIEndPoint.swift */; };
+		BDD015E427B519120002B315 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015E327B519120002B315 /* NetworkService.swift */; };
+		BDD015E627B519300002B315 /* NetworkService+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015E527B519300002B315 /* NetworkService+Defaults.swift */; };
+		BDD015E927B5195F0002B315 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015E827B5195F0002B315 /* ImageDownloaderService.swift */; };
+		BDD015EB27B519770002B315 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015EA27B519770002B315 /* ImageOperation.swift */; };
+		BDD015EE27B519FE0002B315 /* NewsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015ED27B519FE0002B315 /* NewsListModel.swift */; };
+		BDD015F027B51A5E0002B315 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015EF27B51A5E0002B315 /* NewsListViewModel.swift */; };
+		BDD015F427B51AA50002B315 /* NewsListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015F327B51AA50002B315 /* NewsListItemCell.swift */; };
+		BDD015F627B51AC50002B315 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015F527B51AC50002B315 /* NewsListViewController.swift */; };
+		BDD015FC27B51B2C0002B315 /* ViewResuableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015FB27B51B2C0002B315 /* ViewResuableIdentifier.swift */; };
+		BDD015FF27B51B5C0002B315 /* ServiceFailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD015FE27B51B5C0002B315 /* ServiceFailureView.swift */; };
+		BDD0160127B51B720002B315 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0160027B51B720002B315 /* LoadingView.swift */; };
+		BDD0160327B51B960002B315 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0160227B51B960002B315 /* UIImageExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDD015AA27B50E2B0002B315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD0158B27B50E2A0002B315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD0159227B50E2A0002B315;
+			remoteInfo = "Pomelo Fashions";
+		};
+		BDD015B427B50E2B0002B315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD0158B27B50E2A0002B315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD0159227B50E2A0002B315;
+			remoteInfo = "Pomelo Fashions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD3EE33E27B6470200CD136C /* BundleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleHandler.swift; sourceTree = "<group>"; };
+		BD3EE34027B6471C00CD136C /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		BD3EE34227B6473300CD136C /* MockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTest.swift; sourceTree = "<group>"; };
+		BD3EE34627B6479400CD136C /* PMResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMResultTest.swift; sourceTree = "<group>"; };
+		BD3EE34827B647C700CD136C /* PMTestRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMTestRepositoryTest.swift; sourceTree = "<group>"; };
+		BD3EE34D27B6486500CD136C /* ApiNetworkConfigTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworkConfigTest.swift; sourceTree = "<group>"; };
+		BD3EE34F27B6488100CD136C /* ApiEndPointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPointProvider.swift; sourceTree = "<group>"; };
+		BD3EE35127B6489E00CD136C /* DefaultNetworkServicetest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkServicetest.swift; sourceTree = "<group>"; };
+		BD3EE35527B648D300CD136C /* NewListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListModelTest.swift; sourceTree = "<group>"; };
+		BD3EE35727B648EB00CD136C /* NewsListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModelTest.swift; sourceTree = "<group>"; };
+		BD3EE35E27B682B100CD136C /* Mock_News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mock_News.json; sourceTree = "<group>"; };
+		BD3EE36127B6880400CD136C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		BDB2639B27B52B8000BAE9A5 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		BDD0159327B50E2A0002B315 /* Pomelo Fashions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomelo Fashions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD0159627B50E2A0002B315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDD0159F27B50E2B0002B315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD015A227B50E2B0002B315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDD015A427B50E2B0002B315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD015A927B50E2B0002B315 /* Pomelo FashionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pomelo FashionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD015AD27B50E2B0002B315 /* Pomelo_FashionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomelo_FashionsTests.swift; sourceTree = "<group>"; };
+		BDD015B327B50E2B0002B315 /* Pomelo FashionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pomelo FashionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD015B727B50E2B0002B315 /* Pomelo_FashionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomelo_FashionsUITests.swift; sourceTree = "<group>"; };
+		BDD015B927B50E2B0002B315 /* Pomelo_FashionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomelo_FashionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDD015C727B517360002B315 /* APIConstantsWithKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstantsWithKeys.swift; sourceTree = "<group>"; };
+		BDD015C927B517530002B315 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
+		BDD015CE27B517C10002B315 /* NewYorkTimesArticlesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTimesArticlesRepo.swift; sourceTree = "<group>"; };
+		BDD015D027B517E50002B315 /* NewYorkTimesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTimesResult.swift; sourceTree = "<group>"; };
+		BDD015D227B5180C0002B315 /* NewYorkTimesResultsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTimesResultsMap.swift; sourceTree = "<group>"; };
+		BDD015D427B5183B0002B315 /* SearchArticlesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArticlesRepo.swift; sourceTree = "<group>"; };
+		BDD015D627B5185A0002B315 /* PhotoRepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepoService.swift; sourceTree = "<group>"; };
+		BDD015D827B518770002B315 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		BDD015DA27B518930002B315 /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		BDD015DD27B518C70002B315 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BDD015DF27B518E00002B315 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		BDD015E127B518F80002B315 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		BDD015E327B519120002B315 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BDD015E527B519300002B315 /* NetworkService+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Defaults.swift"; sourceTree = "<group>"; };
+		BDD015E827B5195F0002B315 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderService.swift; sourceTree = "<group>"; };
+		BDD015EA27B519770002B315 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		BDD015ED27B519FE0002B315 /* NewsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListModel.swift; sourceTree = "<group>"; };
+		BDD015EF27B51A5E0002B315 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		BDD015F327B51AA50002B315 /* NewsListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListItemCell.swift; sourceTree = "<group>"; };
+		BDD015F527B51AC50002B315 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		BDD015FB27B51B2C0002B315 /* ViewResuableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResuableIdentifier.swift; sourceTree = "<group>"; };
+		BDD015FE27B51B5C0002B315 /* ServiceFailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFailureView.swift; sourceTree = "<group>"; };
+		BDD0160027B51B720002B315 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		BDD0160227B51B960002B315 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD0159027B50E2A0002B315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015A627B50E2B0002B315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015B027B50E2B0002B315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3EE33D27B646EE00CD136C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE33E27B6470200CD136C /* BundleHandler.swift */,
+				BD3EE34027B6471C00CD136C /* TestUtils.swift */,
+				BD3EE34227B6473300CD136C /* MockTest.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD3EE34427B6474800CD136C /* RepositoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015AD27B50E2B0002B315 /* Pomelo_FashionsTests.swift */,
+				BD3EE34527B6475700CD136C /* EnitityTest */,
+				BD3EE34827B647C700CD136C /* PMTestRepositoryTest.swift */,
+			);
+			path = RepositoryTest;
+			sourceTree = "<group>";
+		};
+		BD3EE34527B6475700CD136C /* EnitityTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE34627B6479400CD136C /* PMResultTest.swift */,
+			);
+			path = EnitityTest;
+			sourceTree = "<group>";
+		};
+		BD3EE34C27B6483600CD136C /* NetwrokServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE34D27B6486500CD136C /* ApiNetworkConfigTest.swift */,
+				BD3EE35127B6489E00CD136C /* DefaultNetworkServicetest.swift */,
+				BD3EE34F27B6488100CD136C /* ApiEndPointProvider.swift */,
+			);
+			path = NetwrokServiceTest;
+			sourceTree = "<group>";
+		};
+		BD3EE35327B648B500CD136C /* ListScreenTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE35427B648BF00CD136C /* ViewModel */,
+			);
+			path = ListScreenTest;
+			sourceTree = "<group>";
+		};
+		BD3EE35427B648BF00CD136C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE35527B648D300CD136C /* NewListModelTest.swift */,
+				BD3EE35727B648EB00CD136C /* NewsListViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDC1C98A27BA028100D133C8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE36127B6880400CD136C /* Config.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BDD0158A27B50E2A0002B315 = {
+			isa = PBXGroup;
+			children = (
+				BDD0159527B50E2A0002B315 /* Pomelo Fashions */,
+				BDD015AC27B50E2B0002B315 /* Pomelo FashionsTests */,
+				BDD015B627B50E2B0002B315 /* Pomelo FashionsUITests */,
+				BDD0159427B50E2A0002B315 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD0159427B50E2A0002B315 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD0159327B50E2A0002B315 /* Pomelo Fashions.app */,
+				BDD015A927B50E2B0002B315 /* Pomelo FashionsTests.xctest */,
+				BDD015B327B50E2B0002B315 /* Pomelo FashionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD0159527B50E2A0002B315 /* Pomelo Fashions */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015F727B51AEF0002B315 /* Common */,
+				BDD015EC27B519E80002B315 /* NewsDisplayScreen */,
+				BDD015DC27B518AD0002B315 /* NetworkServices */,
+				BDD015CB27B5176C0002B315 /* Repository */,
+				BDD015C627B5170C0002B315 /* BaseFiles */,
+				BDD0159F27B50E2B0002B315 /* Assets.xcassets */,
+				BDD015A127B50E2B0002B315 /* LaunchScreen.storyboard */,
+				BDD015A427B50E2B0002B315 /* Info.plist */,
+			);
+			path = "Pomelo Fashions";
+			sourceTree = "<group>";
+		};
+		BDD015AC27B50E2B0002B315 /* Pomelo FashionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EE35E27B682B100CD136C /* Mock_News.json */,
+				BD3EE35327B648B500CD136C /* ListScreenTest */,
+				BD3EE34C27B6483600CD136C /* NetwrokServiceTest */,
+				BD3EE34427B6474800CD136C /* RepositoryTest */,
+				BD3EE33D27B646EE00CD136C /* Utils */,
+			);
+			path = "Pomelo FashionsTests";
+			sourceTree = "<group>";
+		};
+		BDD015B627B50E2B0002B315 /* Pomelo FashionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015B727B50E2B0002B315 /* Pomelo_FashionsUITests.swift */,
+				BDD015B927B50E2B0002B315 /* Pomelo_FashionsUITestsLaunchTests.swift */,
+			);
+			path = "Pomelo FashionsUITests";
+			sourceTree = "<group>";
+		};
+		BDD015C627B5170C0002B315 /* BaseFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BDD0159627B50E2A0002B315 /* AppDelegate.swift */,
+				BDD015C727B517360002B315 /* APIConstantsWithKeys.swift */,
+				BDD015C927B517530002B315 /* Configure.swift */,
+				BDB2639B27B52B8000BAE9A5 /* Storyboard.storyboard */,
+			);
+			path = BaseFiles;
+			sourceTree = "<group>";
+		};
+		BDD015CB27B5176C0002B315 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015CC27B517830002B315 /* NewYorkTimesArticlesRepo */,
+				BDD015D427B5183B0002B315 /* SearchArticlesRepo.swift */,
+				BDD015D627B5185A0002B315 /* PhotoRepoService.swift */,
+				BDD015D827B518770002B315 /* Cancellable.swift */,
+				BDD015DA27B518930002B315 /* NetworkServiceProvider.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BDD015CC27B517830002B315 /* NewYorkTimesArticlesRepo */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015CD27B517970002B315 /* Entitiy */,
+				BDD015CE27B517C10002B315 /* NewYorkTimesArticlesRepo.swift */,
+			);
+			path = NewYorkTimesArticlesRepo;
+			sourceTree = "<group>";
+		};
+		BDD015CD27B517970002B315 /* Entitiy */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015D027B517E50002B315 /* NewYorkTimesResult.swift */,
+				BDD015D227B5180C0002B315 /* NewYorkTimesResultsMap.swift */,
+			);
+			path = Entitiy;
+			sourceTree = "<group>";
+		};
+		BDD015DC27B518AD0002B315 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015E727B519450002B315 /* ImageDownloadService */,
+				BDD015DD27B518C70002B315 /* NetworkError.swift */,
+				BDD015DF27B518E00002B315 /* NetworkConfig.swift */,
+				BDD015E127B518F80002B315 /* APIEndPoint.swift */,
+				BDD015E327B519120002B315 /* NetworkService.swift */,
+				BDD015E527B519300002B315 /* NetworkService+Defaults.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		BDD015E727B519450002B315 /* ImageDownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015E827B5195F0002B315 /* ImageDownloaderService.swift */,
+				BDD015EA27B519770002B315 /* ImageOperation.swift */,
+			);
+			path = ImageDownloadService;
+			sourceTree = "<group>";
+		};
+		BDD015EC27B519E80002B315 /* NewsDisplayScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015F227B51A8B0002B315 /* View */,
+				BDD015F127B51A7E0002B315 /* ViewModel */,
+				BDD015F527B51AC50002B315 /* NewsListViewController.swift */,
+			);
+			path = NewsDisplayScreen;
+			sourceTree = "<group>";
+		};
+		BDD015F127B51A7E0002B315 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015EF27B51A5E0002B315 /* NewsListViewModel.swift */,
+				BDD015ED27B519FE0002B315 /* NewsListModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDD015F227B51A8B0002B315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015F327B51AA50002B315 /* NewsListItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDD015F727B51AEF0002B315 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BDC1C98A27BA028100D133C8 /* Config */,
+				BDD015FD27B51B450002B315 /* View */,
+				BDD015F827B51AF90002B315 /* Utility */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BDD015F827B51AF90002B315 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015FB27B51B2C0002B315 /* ViewResuableIdentifier.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BDD015FD27B51B450002B315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD015FE27B51B5C0002B315 /* ServiceFailureView.swift */,
+				BDD0160027B51B720002B315 /* LoadingView.swift */,
+				BDD0160227B51B960002B315 /* UIImageExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD0159227B50E2A0002B315 /* Pomelo Fashions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD015BD27B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo Fashions" */;
+			buildPhases = (
+				BDD0158F27B50E2A0002B315 /* Sources */,
+				BDD0159027B50E2A0002B315 /* Frameworks */,
+				BDD0159127B50E2A0002B315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pomelo Fashions";
+			productName = "Pomelo Fashions";
+			productReference = BDD0159327B50E2A0002B315 /* Pomelo Fashions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD015A827B50E2B0002B315 /* Pomelo FashionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD015C027B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo FashionsTests" */;
+			buildPhases = (
+				BDD015A527B50E2B0002B315 /* Sources */,
+				BDD015A627B50E2B0002B315 /* Frameworks */,
+				BDD015A727B50E2B0002B315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD015AB27B50E2B0002B315 /* PBXTargetDependency */,
+			);
+			name = "Pomelo FashionsTests";
+			productName = "Pomelo FashionsTests";
+			productReference = BDD015A927B50E2B0002B315 /* Pomelo FashionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDD015B227B50E2B0002B315 /* Pomelo FashionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD015C327B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo FashionsUITests" */;
+			buildPhases = (
+				BDD015AF27B50E2B0002B315 /* Sources */,
+				BDD015B027B50E2B0002B315 /* Frameworks */,
+				BDD015B127B50E2B0002B315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD015B527B50E2B0002B315 /* PBXTargetDependency */,
+			);
+			name = "Pomelo FashionsUITests";
+			productName = "Pomelo FashionsUITests";
+			productReference = BDD015B327B50E2B0002B315 /* Pomelo FashionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD0158B27B50E2A0002B315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BDD0159227B50E2A0002B315 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BDD015A827B50E2B0002B315 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BDD0159227B50E2A0002B315;
+					};
+					BDD015B227B50E2B0002B315 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BDD0159227B50E2A0002B315;
+					};
+				};
+			};
+			buildConfigurationList = BDD0158E27B50E2A0002B315 /* Build configuration list for PBXProject "Pomelo Fashions" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD0158A27B50E2A0002B315;
+			productRefGroup = BDD0159427B50E2A0002B315 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD0159227B50E2A0002B315 /* Pomelo Fashions */,
+				BDD015A827B50E2B0002B315 /* Pomelo FashionsTests */,
+				BDD015B227B50E2B0002B315 /* Pomelo FashionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD0159127B50E2A0002B315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3EE36027B685D600CD136C /* Mock_News.json in Resources */,
+				BDD015A327B50E2B0002B315 /* LaunchScreen.storyboard in Resources */,
+				BDD015A027B50E2B0002B315 /* Assets.xcassets in Resources */,
+				BDB2639C27B52B8000BAE9A5 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015A727B50E2B0002B315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3EE35F27B682B100CD136C /* Mock_News.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015B127B50E2B0002B315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD0158F27B50E2A0002B315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD015EB27B519770002B315 /* ImageOperation.swift in Sources */,
+				BDD015E027B518E00002B315 /* NetworkConfig.swift in Sources */,
+				BDD015D327B5180C0002B315 /* NewYorkTimesResultsMap.swift in Sources */,
+				BDD015E927B5195F0002B315 /* ImageDownloaderService.swift in Sources */,
+				BDD015FC27B51B2C0002B315 /* ViewResuableIdentifier.swift in Sources */,
+				BDD015EE27B519FE0002B315 /* NewsListModel.swift in Sources */,
+				BDD015C827B517360002B315 /* APIConstantsWithKeys.swift in Sources */,
+				BDD015D727B5185A0002B315 /* PhotoRepoService.swift in Sources */,
+				BDD0160127B51B720002B315 /* LoadingView.swift in Sources */,
+				BD3EE35C27B64A3000CD136C /* MockTest.swift in Sources */,
+				BDD015F027B51A5E0002B315 /* NewsListViewModel.swift in Sources */,
+				BDD0159727B50E2A0002B315 /* AppDelegate.swift in Sources */,
+				BDD015DB27B518930002B315 /* NetworkServiceProvider.swift in Sources */,
+				BDD015CF27B517C10002B315 /* NewYorkTimesArticlesRepo.swift in Sources */,
+				BDD015D127B517E50002B315 /* NewYorkTimesResult.swift in Sources */,
+				BDD015F427B51AA50002B315 /* NewsListItemCell.swift in Sources */,
+				BDD015D927B518770002B315 /* Cancellable.swift in Sources */,
+				BDD015FF27B51B5C0002B315 /* ServiceFailureView.swift in Sources */,
+				BDD015E427B519120002B315 /* NetworkService.swift in Sources */,
+				BDD015E627B519300002B315 /* NetworkService+Defaults.swift in Sources */,
+				BD3EE35D27B64A3D00CD136C /* BundleHandler.swift in Sources */,
+				BDD015E227B518F80002B315 /* APIEndPoint.swift in Sources */,
+				BDD0160327B51B960002B315 /* UIImageExtension.swift in Sources */,
+				BDD015F627B51AC50002B315 /* NewsListViewController.swift in Sources */,
+				BDD015DE27B518C70002B315 /* NetworkError.swift in Sources */,
+				BDD015CA27B517530002B315 /* Configure.swift in Sources */,
+				BDD015D527B5183B0002B315 /* SearchArticlesRepo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015A527B50E2B0002B315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3EE34127B6471C00CD136C /* TestUtils.swift in Sources */,
+				BD3EE35027B6488100CD136C /* ApiEndPointProvider.swift in Sources */,
+				BD3EE34927B647C700CD136C /* PMTestRepositoryTest.swift in Sources */,
+				BD3EE35227B6489E00CD136C /* DefaultNetworkServicetest.swift in Sources */,
+				BD3EE34E27B6486500CD136C /* ApiNetworkConfigTest.swift in Sources */,
+				BD3EE34727B6479400CD136C /* PMResultTest.swift in Sources */,
+				BDD015AE27B50E2B0002B315 /* Pomelo_FashionsTests.swift in Sources */,
+				BD3EE35827B648EB00CD136C /* NewsListViewModelTest.swift in Sources */,
+				BD3EE35627B648D300CD136C /* NewListModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD015AF27B50E2B0002B315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD015B827B50E2B0002B315 /* Pomelo_FashionsUITests.swift in Sources */,
+				BDD015BA27B50E2B0002B315 /* Pomelo_FashionsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDD015AB27B50E2B0002B315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD0159227B50E2A0002B315 /* Pomelo Fashions */;
+			targetProxy = BDD015AA27B50E2B0002B315 /* PBXContainerItemProxy */;
+		};
+		BDD015B527B50E2B0002B315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD0159227B50E2A0002B315 /* Pomelo Fashions */;
+			targetProxy = BDD015B427B50E2B0002B315 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDD015A127B50E2B0002B315 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD015A227B50E2B0002B315 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDD015BB27B50E2B0002B315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3EE36127B6880400CD136C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDD015BC27B50E2B0002B315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3EE36127B6880400CD136C /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD015BE27B50E2B0002B315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pomelo Fashions/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-Fashions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDD015BF27B50E2B0002B315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pomelo Fashions/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-Fashions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDD015C127B50E2B0002B315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-FashionsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo Fashions.app/Pomelo Fashions";
+			};
+			name = Debug;
+		};
+		BDD015C227B50E2B0002B315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-FashionsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomelo Fashions.app/Pomelo Fashions";
+			};
+			name = Release;
+		};
+		BDD015C427B50E2B0002B315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-FashionsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pomelo Fashions";
+			};
+			name = Debug;
+		};
+		BDD015C527B50E2B0002B315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeep.pomelofashions.Pomelo-FashionsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pomelo Fashions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD0158E27B50E2A0002B315 /* Build configuration list for PBXProject "Pomelo Fashions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD015BB27B50E2B0002B315 /* Debug */,
+				BDD015BC27B50E2B0002B315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD015BD27B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo Fashions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD015BE27B50E2B0002B315 /* Debug */,
+				BDD015BF27B50E2B0002B315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD015C027B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo FashionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD015C127B50E2B0002B315 /* Debug */,
+				BDD015C227B50E2B0002B315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD015C327B50E2B0002B315 /* Build configuration list for PBXNativeTarget "Pomelo FashionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD015C427B50E2B0002B315 /* Debug */,
+				BDD015C527B50E2B0002B315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD0158B27B50E2A0002B315 /* Project object */;
+}
